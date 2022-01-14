@@ -10,6 +10,7 @@ class CreateArticlesTable extends Migration {
 		Schema::create('Articles', function(Blueprint $table) {
 			$table->increments('id');
 			$table->timestamps();
+			$table->timestamp('published_at');
 			$table->softDeletes();
 			$table->string('title', 255)->unique();
 			$table->string('slug', 255)->unique();
