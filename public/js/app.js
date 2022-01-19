@@ -20792,7 +20792,7 @@ var render = function () {
                   _c("img", {
                     staticClass: "rounded me-2",
                     attrs: {
-                      src: "https://via.placeholder.com/50/5F113B/FFFFFF/?text=User",
+                      src: "https://picsum.photos/200/300?random=1",
                       alt: "...",
                     },
                   }),

@@ -23,7 +23,7 @@
         <div class="toast-container pb-2 mt-5 mx-auto" style="min-width: 100%;" v-for="comment in comments">
             <div class="toast showing" style="min-width: 100%;">
                 <div class="toast-header">
-                    <img src="https://via.placeholder.com/50/5F113B/FFFFFF/?text=User" class="rounded me-2" alt="...">
+                    <img src="https://picsum.photos/200/300?random=1" class="rounded me-2" alt="...">
                     <strong class="me-auto">{{comment.subject}}</strong>
                     <small class="text-muted">{{comment.created_at}}</small>
                 </div>

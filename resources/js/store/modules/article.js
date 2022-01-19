@@ -49,6 +49,7 @@ export const actions = {
         axios.post('/api/article-add-comment', { subject:payload.subject, body:payload.body, article_id:payload.article_id}).then((response) =>{
             context.commit('SET_COMMENT_SUCCESS', !state.commentSuccess)
             context.dispatch('getArticleData', context.rootState.slug)
+
         }).catch((error)=>{
             if(error.response.status === 422) {
                 context.state.errors = error.response.data.errors
